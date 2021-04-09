@@ -41,3 +41,8 @@ h1 {
 .tab.active {
   background: #5458A7;
 }
+
+.todayDate {
+  text-align: center;
+  color: var(--bg-sunny);
+}

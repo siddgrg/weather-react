@@ -1,12 +1,12 @@
 import React from 'react';
+import CardTop from './CardTop';
 import Tab from './Tab';
-import WeatherDetailsToday from '../WeatherDetailsToday/WeatherDetailsToday';
 
 const TabbedCards = () => {
     return (
         <>
-            <div class="tabbedCardsTop">
-                <WeatherDetailsToday />
+            <div class="tabbedCardsTop p-2">
+                <CardTop show="today" />
             </div>
             <div class="d-flex justify-content-center">
                 <Tab active="true" title="Today" />
