@@ -8,7 +8,6 @@ const TodayDate = () => {
             `${currentDate.toLocaleDateString(`en-GB`, { weekday: `long`, year: `numeric`, month: `long`, day: `numeric` })}`
     }
 
-
     return <p class="todayDate">{getCurrentDate()}</p>
 }
 

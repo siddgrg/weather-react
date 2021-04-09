@@ -11,13 +11,19 @@ h1 {
   font-size: 2rem;
 }
 
+/* Search */
+
 #temp-city {
   font-size: 4rem;
   text-decoration: underline;
 }
 
+/* TabbedCards */
+
 .tabbedCardsTop {
   margin-top: 3rem;
+  padding: 0.5rem 3rem;
+
   width: 420px;
   height: 254px;
   background: #5458A7;
@@ -42,7 +48,22 @@ h1 {
   background: #5458A7;
 }
 
+/* WeatherDetailsToday */
+
 .todayDate {
+  margin-bottom: 0.5rem;
+
   text-align: center;
   color: var(--bg-sunny);
+}
+
+.weatherDetailsToday .temp {
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.weatherDetailsToday p {
+  margin: 0;
 }

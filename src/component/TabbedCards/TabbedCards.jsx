@@ -2,11 +2,11 @@ import React from 'react';
 import CardTop from './CardTop';
 import Tab from './Tab';
 
-const TabbedCards = () => {
+const TabbedCards = ({ weatherData }) => {
     return (
         <>
-            <div class="tabbedCardsTop p-2">
-                <CardTop show="today" />
+            <div class="tabbedCardsTop">
+                <CardTop show="today" weatherData={weatherData} />
             </div>
             <div class="d-flex justify-content-center">
                 <Tab active="true" title="Today" />

@@ -2,10 +2,10 @@ import React from 'react';
 import WeatherDetailsToday from '../WeatherDetailsToday/WeatherDetailsToday'
 import WeatherDetailsSmall from '../WeatherDetailsSmall/WeatherDetailsSmall'
 
-const CardTop = ({ show }) => {
+const CardTop = ({ show, weatherData }) => {
     if (show === "today") {
         return (
-            <WeatherDetailsToday />
+            <WeatherDetailsToday weatherData={weatherData} />
         )
     } else if (show === "fiveDays") {
         return (
