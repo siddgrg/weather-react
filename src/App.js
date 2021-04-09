@@ -6,9 +6,11 @@ import './res/css/App.css';
 function App() {
   return (
     <div class="container">
-      <Header />
-      <LocationSearch />
-      <TabbedCards />
+      <div class="d-flex flex-column align-items-center">
+        <Header />
+        <LocationSearch />
+        <TabbedCards />
+      </div>
     </div>
   );
 }

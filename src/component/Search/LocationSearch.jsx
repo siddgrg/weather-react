@@ -1,7 +1,7 @@
 import React from 'react';
 
 const LocationSearch = () => {
-    return <p>LocationSearch</p>
+    return <span id="temp-city">London</span>
 }
 
 export default LocationSearch;
