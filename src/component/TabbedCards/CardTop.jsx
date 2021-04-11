@@ -1,6 +1,6 @@
 import React from 'react';
 import WeatherDetailsToday from '../WeatherDetailsToday/WeatherDetailsToday'
-import WeatherDetailsSmall from '../WeatherDetailsSmall/WeatherDetailsSmall'
+import WeatherDetailsFive from '../WeatherDetailsFive/WeatherDetailsFive'
 
 const CardTop = ({ show, weatherData }) => {
     if (show === "today") {
@@ -9,7 +9,7 @@ const CardTop = ({ show, weatherData }) => {
         )
     } else if (show === "fiveDays") {
         return (
-            <WeatherDetailsSmall />
+            <WeatherDetailsFive weatherData={weatherData} />
         )
     }
 

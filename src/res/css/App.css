@@ -22,7 +22,6 @@ h1 {
 
 .tabbedCardsTop {
   margin-top: 3rem;
-  padding: 0.5rem 3rem;
 
   width: 420px;
   height: 254px;
@@ -51,10 +50,14 @@ h1 {
 /* WeatherDetailsToday */
 
 .todayDate {
-  margin-bottom: 0.5rem;
+  margin: 0.5rem 0;
 
   text-align: center;
   color: var(--bg-sunny);
+}
+
+.weatherDetailsToday {
+  padding: 0 3rem;
 }
 
 .weatherDetailsToday .temp {
@@ -66,4 +69,26 @@ h1 {
 
 .weatherDetailsToday p {
   margin: 0;
+}
+
+/* WeatherDetailsFive */
+
+.weatherDetailsFive {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* WeatherDetailsSmall */
+
+.weatherDetailsSmall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  width: 20%;
+  height: 254px;
+}
+
+.weatherDetailsSmall.active {
+  background-color: #4F529D;
 }
