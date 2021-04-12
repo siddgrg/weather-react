@@ -13,7 +13,6 @@ const WeatherDetailsFive = ({ weatherData }) => {
                     index={i}
                     weather={w.weather[0]} 
                     temp={w.temp}
-                    windSpeed={w.wind_speed}
                 />)
     }
 

@@ -1,5 +1,7 @@
 :root {
   --bg-sunny: #7A7EEA;
+  --bg-card-top: #5458A7;
+  --accent-1: #444787;
 }
 
 body {
@@ -25,7 +27,7 @@ h1 {
 
   width: 420px;
   height: 254px;
-  background: #5458A7;
+  background: var(--bg-card-top);
   border-radius: 50px 50px 0px 0px;
 }
 
@@ -37,14 +39,14 @@ h1 {
   margin-top: 0.1rem;
   width: 210px;
   height: 65px;
-  background: #444787;
+  background: var(--accent-1);
   border-radius: 0px 0px 50px 50px;
 
   font-size: 1.5rem;
 }
 
 .tab.active {
-  background: #5458A7;
+  background: var(--bg-card-top);
 }
 
 /* WeatherDetailsToday */
@@ -84,11 +86,21 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  justify-content: center;
+
   width: 20%;
   height: 254px;
 }
 
 .weatherDetailsSmall.active {
   background-color: #4F529D;
+}
+
+.weatherDetailsSmall .tempMax, .weatherDetailsSmall .tempMin {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.weatherDetailsSmall .tempMin {
+  color: var(--accent-1);
 }

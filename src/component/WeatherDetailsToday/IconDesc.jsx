@@ -12,7 +12,7 @@ const IconDesc = ({ data }) => {
                 alt="weather icon"
                 class="img-fluid"
             />
-            <p>{main}</p>
+            <p class="mb-1">{main}</p>
         </div>
     )
 }

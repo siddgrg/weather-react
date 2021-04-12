@@ -1,5 +1,5 @@
 import React from 'react';
-import TodayDate from './Date';
+import TodayDate from './TodayDate';
 import IconDesc from './IconDesc';
 
 const WeatherDetailsToday = ({weatherData}) => {
