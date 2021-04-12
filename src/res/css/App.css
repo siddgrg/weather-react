@@ -41,8 +41,16 @@ h1 {
   height: 65px;
   background: var(--accent-1);
   border-radius: 0px 0px 50px 50px;
+  border-style: none;
 
+  color: #fff;
   font-size: 1.5rem;
+}
+
+.tab:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .tab.active {
@@ -90,6 +98,14 @@ h1 {
 
   width: 20%;
   height: 254px;
+}
+
+.weatherDetailsSmall:first-of-type {
+  border-radius: 50px 0 0 0;
+}
+
+.weatherDetailsSmall:last-of-type {
+  border-radius: 0 50px 0 0;
 }
 
 .weatherDetailsSmall.active {

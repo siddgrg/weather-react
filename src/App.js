@@ -16,6 +16,8 @@ function App() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    setLoaded(false);
+
     axios.get(`${URL}/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly,alerts&appid=${API_KEY}&units=metric`)
       .then(res => { 
           setWeatherData(res.data);
