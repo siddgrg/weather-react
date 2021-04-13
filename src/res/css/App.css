@@ -15,9 +15,18 @@ h1 {
 
 /* Search */
 
-#temp-city {
+.locationDropdown .locationToggle {
+  color: white;
   font-size: 4rem;
+}
+
+.locationDropdown .locationToggle span {
   text-decoration: underline;
+}
+
+.locationDropdown .locationToggle:hover {
+  color: white;
+  text-decoration: none;
 }
 
 /* TabbedCards */
