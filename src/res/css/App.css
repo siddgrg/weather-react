@@ -43,6 +43,8 @@ h1:hover {
 /* Search */
 
 .locationDropdown .locationToggle {
+  padding: 0 20px 20px;
+
   color: white;
   font-size: 4rem;
 }
@@ -52,6 +54,9 @@ h1:hover {
 }
 
 .locationDropdown .locationToggle:hover {
+  border-radius: .25rem;
+
+  background-color: rgb(255,255,255,0.04);
   color: white;
   text-decoration: none;
 }

@@ -24,7 +24,7 @@ function App() {
   const [location, setLocation] = useState(locations[0][0]);
   const [latitude, setLatitude] = useState(locations[0][1]);
   const [longitude, setLongitude] = useState(locations[0][2]);
-  const [weatherData, setWeatherData] = useState([]);
+  const [weatherData, setWeatherData] = useState({});
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(null);
 
@@ -36,7 +36,6 @@ function App() {
 
   useEffect(() => {
     setLoaded(false);
-
     axios.get(`${URL}/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly,alerts&appid=${API_KEY}&units=metric`)
       .then(res => { 
           setWeatherData(res.data);
