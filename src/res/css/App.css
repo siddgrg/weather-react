@@ -56,6 +56,19 @@ h1:hover {
   text-decoration: none;
 }
 
+.locationDropdown .dropdown-menu {
+  background-color: var(--accent-1);
+}
+
+.locationDropdown .dropdown-item {
+  color: white;
+}
+
+.locationDropdown .dropdown-item:hover {
+  background-color: var(--bg-card-top);
+  color: white;
+}
+
 /* TabbedCards */
 
 .tabbedCardsTop {
