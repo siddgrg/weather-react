@@ -9,8 +9,35 @@ body {
   color: white;
 }
 
+/* Header */
+
 h1 {
   font-size: 2rem;
+}
+
+h1 a {
+  color: white;
+}
+
+h1 a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* https://stackoverflow.com/questions/40628410/trying-to-make-a-link-bounce-on-hover */
+
+h1:hover {
+  animation: bounce 0.5s 2;
+}
+
+@keyframes bounce {
+  0%,  
+  100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-3px);
+  }
 }
 
 /* Search */
@@ -52,12 +79,12 @@ h1 {
   border-radius: 0px 0px 50px 50px;
   border-style: none;
 
-  color: #fff;
+  color: white;
   font-size: 1.5rem;
 }
 
 .tab:hover {
-  color: #fff;
+  color: white;
   text-decoration: none;
   cursor: pointer;
 }
