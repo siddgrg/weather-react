@@ -1,11 +1,11 @@
 import React from 'react';
-import WeatherDetailsToday from '../WeatherDetailsToday/WeatherDetailsToday'
+import WeatherDetailsCurrent from '../WeatherDetailsCurrent/WeatherDetailsCurrent'
 import WeatherDetailsFive from '../WeatherDetailsFive/WeatherDetailsFive'
 
 const CardTop = ({ show, weatherData }) => {
     if (show === "current") {
         return (
-            <WeatherDetailsToday weatherData={weatherData} />
+            <WeatherDetailsCurrent weatherData={weatherData} />
         )
     } else if (show === "fiveDays") {
         return (

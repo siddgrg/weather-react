@@ -57,27 +57,27 @@ h1 {
   background: var(--bg-card-top);
 }
 
-/* WeatherDetailsToday */
+/* WeatherDetailsCurrent */
 
-.todayDate {
+.currentDate {
   margin: 0.5rem 0;
 
   text-align: center;
   color: var(--bg-sunny);
 }
 
-.weatherDetailsToday {
+.weatherDetailsCurrent {
   padding: 0 3rem;
 }
 
-.weatherDetailsToday .temp {
+.weatherDetailsCurrent .temp {
   margin: 0;
 
   font-weight: bold;
   font-size: 5rem;
 }
 
-.weatherDetailsToday p {
+.weatherDetailsCurrent p {
   margin: 0;
 }
 

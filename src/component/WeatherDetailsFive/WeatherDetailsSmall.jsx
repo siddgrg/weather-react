@@ -1,5 +1,5 @@
 import React from 'react';
-import IconDesc from '../WeatherDetailsToday/IconDesc';
+import IconDesc from '../WeatherDetailsCurrent/IconDesc';
 import FiveDaysDate from './FiveDaysDate';
 import FiveDaysTemp from './FiveDaysTemp';
 
