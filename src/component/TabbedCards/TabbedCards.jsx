@@ -4,7 +4,7 @@ import Tab from './Tab';
 
 const TabbedCards = ({ weatherData }) => {
 
-    const [activeTab, setActiveTab] = useState('today');
+    const [activeTab, setActiveTab] = useState('current');
 
     return (
         <>
@@ -13,8 +13,8 @@ const TabbedCards = ({ weatherData }) => {
             </div>
             <div class="d-flex justify-content-center">
                 <Tab 
-                    active={activeTab === 'today' ? true : false}
-                    title="Today"
+                    active={activeTab === 'current' ? true : false}
+                    title="Current"
                     setActiveTab={setActiveTab}
                 />
                 <Tab 
