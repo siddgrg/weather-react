@@ -1,0 +1,52 @@
+[
+    {
+        "name": "London",
+        "latitude": 51.5074, 
+        "longitude": -0.1278
+    },
+    {
+        "name": "New Delhi",
+        "latitude": 28.7041, 
+        "longitude": 77.1025
+    },
+    {
+        "name": "Tokyo",
+        "latitude": 35.6762, 
+        "longitude": 139.6503
+    },
+    {
+        "name": "Shanghai",
+        "latitude": 31.2304, 
+        "longitude": 121.4737
+    },
+    {
+        "name": "São Paulo",
+        "latitude": -23.533773, 
+        "longitude": -46.625290
+    },
+    {
+        "name": "Mexico City",
+        "latitude": 19.4326, 
+        "longitude": -99.1332
+    },
+    {
+        "name": "New York",
+        "latitude": 40.7128, 
+        "longitude": -74.0060
+    },
+    {
+        "name": "Istanbul",
+        "latitude": 41.0082, 
+        "longitude": 28.9784
+    },
+    {
+        "name": "Cairo",
+        "latitude": 30.0444, 
+        "longitude": 31.2357
+    },
+    {
+        "name": "Pokhara",
+        "latitude": 28.2096, 
+        "longitude": 83.9856
+    }
+]

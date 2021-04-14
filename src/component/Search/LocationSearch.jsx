@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 
-const LocationSearch = ({ currentLocation, locations, setLocationHandle }) => {
+const LocationSearch = ({ currentLocation, locations, setLocLonLat }) => {
 
     const [toggleTitle, setToggleTitle] = useState(currentLocation);
 
@@ -23,7 +23,7 @@ const LocationSearch = ({ currentLocation, locations, setLocationHandle }) => {
 
     const onSelectLocationHandle = (eventKey, e) => {
         setToggleTitle(e.target.text);
-        setLocationHandle(eventKey);
+        setLocLonLat(eventKey);
     }
 
     return (
