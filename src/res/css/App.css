@@ -1,11 +1,22 @@
 :root {
-  --bg-sunny: #7A7EEA;
-  --bg-card-top: #5458A7;
-  --accent-1: #444787;
+  --bg-night: #525252;
+  --accent-1-night: #2c2c2c;
+
+  --bg-morning: #EAA27A;
+  --accent-1-morning: #7c5742;
+
+  --bg-day: #7A7EEA;
+  --accent-1-day: #444787;
+
+  --bg-evening: #977AEA;
+  --accent-1-evening: #4c3d75;
+
+  --bg-card-top: rgba(0,0,0,0.25);
+  --accent-2: rgba(0,0,0,0.12);
 }
 
 body {
-  background-color: var(--bg-sunny);
+  background-color: var(--bg-day);
   color: white;
 }
 
@@ -62,7 +73,7 @@ h1:hover {
 }
 
 .locationDropdown .dropdown-menu {
-  background-color: var(--accent-1);
+  background-color: var(--accent-1-day);
 }
 
 .locationDropdown .dropdown-item {
@@ -81,7 +92,7 @@ h1:hover {
 
   width: 420px;
   height: 254px;
-  background: var(--bg-card-top);
+  background-color: var(--bg-card-top);
   border-radius: 50px 50px 0px 0px;
 }
 
@@ -93,7 +104,7 @@ h1:hover {
   margin-top: 0.1rem;
   width: 210px;
   height: 65px;
-  background: var(--accent-1);
+  background-color: var(--accent-1-day);
   border-radius: 0px 0px 50px 50px;
   border-style: none;
 
@@ -108,7 +119,7 @@ h1:hover {
 }
 
 .tab.active {
-  background: var(--bg-card-top);
+  background-color: var(--bg-card-top) !important;
 }
 
 /* WeatherDetailsCurrent */
@@ -117,7 +128,7 @@ h1:hover {
   margin: 0.5rem 0;
 
   text-align: center;
-  color: var(--bg-sunny);
+  color: var(--bg-day);
 }
 
 .weatherDetailsCurrent {
@@ -162,8 +173,8 @@ h1:hover {
   border-radius: 0 50px 0 0;
 }
 
-.weatherDetailsSmall.active {
-  background-color: #4F529D;
+.weatherDetailsSmall.alt {
+  background-color: var(--accent-2);
 }
 
 .weatherDetailsSmall .tempMax, .weatherDetailsSmall .tempMin {
@@ -172,5 +183,70 @@ h1:hover {
 }
 
 .weatherDetailsSmall .tempMin {
-  color: var(--accent-1);
+  color: var(--accent-1-day);
+}
+
+/* Night */
+.night {
+  background-color:var(--bg-night);
+}
+
+.night .locationDropdown .dropdown-menu {
+  background-color: var(--accent-1-night);
+}
+
+.night .tab {
+  background-color: var(--accent-1-night);
+}
+
+.night .currentDate {
+  color: var(--bg-night);
+}
+
+.night .weatherDetailsSmall .tempMin {
+  color: var(--accent-1-night);
+}
+
+/* Morning */
+.morning {
+  background-color:var(--bg-morning);
+}
+
+.morning .locationDropdown .dropdown-menu {
+  background-color: var(--accent-1-morning);
+}
+
+.morning .tab {
+  background-color: var(--accent-1-morning);
+}
+
+.morning .currentDate {
+  color: var(--bg-morning);
+}
+
+.morning .weatherDetailsSmall .tempMin {
+  color: var(--accent-1-morning);
+}
+
+/* Day (default styles) */
+
+/* Evening */
+.evening {
+  background-color:var(--bg-evening);
+}
+
+.evening .locationDropdown .dropdown-menu {
+  background-color: var(--accent-1-evening);
+}
+
+.evening .tab {
+  background-color: var(--accent-1-evening);
+}
+
+.evening .currentDate {
+  color: var(--bg-evening);
+}
+
+.evening .weatherDetailsSmall .tempMin {
+  color: var(--accent-1-evening);
 }

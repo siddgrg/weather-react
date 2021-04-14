@@ -9,7 +9,7 @@ const WeatherDetailsSmall = ({ index, weather, temp }) => {
     date.setDate(date.getDate() + index);
 
     return (
-        <div class={index % 2 !== 0 ? "weatherDetailsSmall" : "weatherDetailsSmall active"}>
+        <div class={index % 2 !== 0 ? "weatherDetailsSmall" : "weatherDetailsSmall alt"}>
             {index === 0 && <p class="mt-4 mb-0">Today</p>}
             {index !== 0 && <FiveDaysDate date={date} />}
             <IconDesc data={[weather]} />

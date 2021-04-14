@@ -25,6 +25,7 @@ function App() {
   const [latitude, setLatitude] = useState(locations[0][1]);
   const [longitude, setLongitude] = useState(locations[0][2]);
   const [weatherData, setWeatherData] = useState({});
+  const [dateTime, setDateTime] = useState();
   const [loaded, setLoaded] = useState(false);
   const [error, setError] = useState(null);
 
@@ -37,16 +38,29 @@ function App() {
   useEffect(() => {
     setLoaded(false);
     axios.get(`${URL}/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=minutely,hourly,alerts&appid=${API_KEY}&units=metric`)
-      .then(res => { 
-          setWeatherData(res.data);
-          setLoaded(true);
+      .then(res => {
+        setWeatherData(res.data);
+        setDateTime(new Date((res.data.current.dt + res.data.timezone_offset - 3600) * 1000));
+        setLoaded(true);
       })
-      .catch(err => { 
+      .catch(err => {
         setError(err);
         setLoaded(true);
         console.log(error);
       })
-  }, [location, latitude, longitude])
+  }, [location, latitude, longitude]);
+
+  useEffect(() => {
+    if (loaded === true) {
+      const bodyElem = document.querySelector('body');
+      const currentHour = dateTime.getHours();
+
+      if (currentHour < 5 || currentHour > 19) bodyElem.className = 'night';      // night: 20:00 to 04:59
+      if (currentHour > 4 && currentHour < 11) bodyElem.className = 'morning';    // morning: 05:00 to 10:59
+      if (currentHour > 10 && currentHour < 17) bodyElem.className = '';          // day: 11:00 to 16:59
+      if (currentHour > 16 && currentHour < 20) bodyElem.className = 'evening';   // evening: 17:00 to 19:59
+    }
+  }, [dateTime, loaded])
 
   return (
     <div class="container mt-5">
