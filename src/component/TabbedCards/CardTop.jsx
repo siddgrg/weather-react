@@ -3,11 +3,11 @@ import WeatherDetailsCurrent from '../WeatherDetailsCurrent/WeatherDetailsCurren
 import WeatherDetailsFive from '../WeatherDetailsFive/WeatherDetailsFive'
 
 const CardTop = ({ show, weatherData }) => {
-    if (show === "current") {
+    if (show === "Current") {
         return (
             <WeatherDetailsCurrent weatherData={weatherData} />
         )
-    } else if (show === "fiveDays") {
+    } else if (show === "5 Days") {
         return (
             <WeatherDetailsFive weatherData={weatherData} />
         )
