@@ -1,6 +1,6 @@
 import React, { useState, useEffect, createContext } from 'react';
 import Header from './component/Header/Header';
-import LocationToggle from './component/LocationToggle/LocationToggle';
+import LocationDropdown from './component/LocationDropdown/LocationDropdown';
 import TabbedCards from './component/TabbedCards/TabbedCards';
 import './res/css/App.css';
 import axios from 'axios';
@@ -54,7 +54,7 @@ function App() {
     <div class="container mt-5">
       <div class="d-flex flex-column align-items-center">
         <Header />
-        <LocationToggle
+        <LocationDropdown
           currentLocation={location}
           locations={LOCATIONS.map((l) => l.name)}
           setLocLonLat={setLocLonLat}
