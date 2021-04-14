@@ -9,7 +9,7 @@ const WeatherDetailsCurrent = ({ weatherData }) => {
 
     return (
         <>
-            <CurrentDate dateTimeUnix={dt} timezoneOffset={timezone_offset} />
+            <CurrentDate dateTime={dt} timezoneOffset={timezone_offset} />
             <div class="weatherDetailsCurrent row">
                 <div class="col-8">
                     <h3 class="temp">{Math.round(temp)}&deg;C</h3>
