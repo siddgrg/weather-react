@@ -2,14 +2,13 @@ import React from 'react';
 import CurrentDate from './CurrentDate';
 import IconDesc from './IconDesc';
 
-const WeatherDetailsCurrent = ({ weatherData }) => {
+const WeatherDetailsCurrent = ({ weatherData, dateTime }) => {
 
-    const { weather, temp, humidity, feels_like, wind_speed, dt } = weatherData.current;
-    const { timezone_offset } = weatherData;
+    const { weather, temp, humidity, feels_like, wind_speed } = weatherData.current;
 
     return (
         <>
-            <CurrentDate dateTime={dt} timezoneOffset={timezone_offset} />
+            <CurrentDate dateTime={dateTime} />
             <div class="weatherDetailsCurrent row">
                 <div class="col-8">
                     <h3 class="temp">{Math.round(temp)}&deg;C</h3>

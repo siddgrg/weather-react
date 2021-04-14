@@ -59,7 +59,7 @@ function App() {
           locations={LOCATIONS.map((l) => l.name)}
           setLocLonLat={setLocLonLat}
         />
-        {loaded && error === null && <TabbedCards weatherData={weatherData} />}
+        {loaded && error === null && <TabbedCards weatherData={weatherData} dateTime={dateTime} />}
         {loaded && error && <p>There was an error loading the weather</p>}
         {!loaded && <p>Loading...</p>}
       </div>

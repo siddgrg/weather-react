@@ -1,13 +1,9 @@
 import React from 'react';
 import WeatherDetailsSmall from './WeatherDetailsSmall';
 
-const WeatherDetailsFive = ({ weatherData }) => {
+const WeatherDetailsFive = ({ weatherData, dateTime }) => {
 
     let weatherDetailsSmallArray = [];
-    const { timezone_offset } = weatherData;
-    const { dt } = weatherData.current;
-
-    console.log(weatherData);
 
     for (let i = 0; i !== 5; i++) {
         const w = weatherData.daily[i];
@@ -17,8 +13,7 @@ const WeatherDetailsFive = ({ weatherData }) => {
                     index={i}
                     weather={w.weather[0]}
                     temp={w.temp}
-                    dateTime={dt}
-                    timezoneOffset={timezone_offset}
+                    dateTime={dateTime}
                 />)
     }
 
