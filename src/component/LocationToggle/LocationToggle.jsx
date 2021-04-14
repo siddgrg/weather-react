@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 
-const LocationSearch = ({ currentLocation, locations, setLocLonLat }) => {
+const LocationToggle = ({ currentLocation, locations, setLocLonLat }) => {
 
     const [toggleTitle, setToggleTitle] = useState(currentLocation);
 
@@ -38,4 +38,4 @@ const LocationSearch = ({ currentLocation, locations, setLocLonLat }) => {
     )
 }
 
-export default LocationSearch;
+export default LocationToggle;
