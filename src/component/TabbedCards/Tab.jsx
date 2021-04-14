@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Tab = ({active, title, setActiveTab}) => {
+const Tab = ({ active, index, title, setActiveTab }) => {
 
     const handleActiveTab = () => {
-        setActiveTab(title);
+        setActiveTab(index);
     }
 
     return (

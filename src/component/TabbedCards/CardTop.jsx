@@ -3,18 +3,15 @@ import WeatherDetailsCurrent from '../WeatherDetailsCurrent/WeatherDetailsCurren
 import WeatherDetailsFive from '../WeatherDetailsFive/WeatherDetailsFive'
 
 const CardTop = ({ show, weatherData, dateTime }) => {
-    
-    if (show === "Current") {
-        return (
-            <WeatherDetailsCurrent weatherData={weatherData} dateTime={dateTime} />
-        )
-    } else if (show === "5 Days") {
-        return (
-            <WeatherDetailsFive weatherData={weatherData} dateTime={dateTime} />
-        )
-    }
 
-    return <p>Error</p>
+    switch (show) {
+        case 0:
+            return <WeatherDetailsCurrent weatherData={weatherData} dateTime={dateTime} />;
+        case 1:
+            return <WeatherDetailsFive weatherData={weatherData} dateTime={dateTime} />
+        default:
+            return <p>Error</p>
+    }
 }
 
 export default CardTop;
